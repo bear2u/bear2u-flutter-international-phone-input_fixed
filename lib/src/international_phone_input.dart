@@ -105,7 +105,6 @@ class _InternationalPhoneInputState extends State<InternationalPhoneInput> {
     String phoneText = phoneTextController.text;
     if (phoneText != null && phoneText.isNotEmpty) {
       if (widget.onPhoneNumberChange != null) {
-        print('#108 phoneText : $phoneText, ${selectedItem}');
         widget.onPhoneNumberChange(phoneText, "1234", selectedItem);
       }
 //      PhoneService.parsePhoneNumber(phoneText, selectedItem.code)
